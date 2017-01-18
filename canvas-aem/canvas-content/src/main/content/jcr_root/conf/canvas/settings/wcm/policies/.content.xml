@@ -8,12 +8,12 @@
                 <responsivegrid jcr:primaryType="nt:unstructured">
                     <canvas-default
                         jcr:description="Policy for editable layout containers"
-                        jcr:lastModified="{Date}2017-01-18T11:03:04.379+07:00"
+                        jcr:lastModified="{Date}2017-01-18T23:28:50.475+07:00"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         jcr:title="Canvas Default"
                         sling:resourceType="wcm/core/components/policy/policy"
-                        components="[/libs/wcm/foundation/components/responsivegrid,group:canvas]"
+                        components="[/libs/wcm/foundation/components/responsivegrid,/apps/canvas/components/content/colctrl,/apps/canvas/components/content/helloworld,/apps/canvas/components/content/image,/apps/canvas/components/content/text,/apps/canvas/components/content/textimage,/apps/canvas/components/content/title,group:Canvas.Structure]"
                         policyResourceType="wcm/foundation/components/responsivegrid">
                         <cq:authoring jcr:primaryType="nt:unstructured">
                             <assetToComponentMapping jcr:primaryType="nt:unstructured">
@@ -63,13 +63,13 @@
                     </canvas-default>
                     <canvas-structure
                         jcr:description="Policy for templates to allow structure components"
-                        jcr:lastModified="{Date}2017-01-18T00:04:38.022+07:00"
+                        jcr:lastModified="{Date}2017-01-18T23:30:26.260+07:00"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         jcr:title="Canvas Structure"
                         sling:resourceType="wcm/core/components/policy/policy"
                         columns="Canvas"
-                        components="[/libs/wcm/foundation/components/responsivegrid,group:Canvas.Structure]"
+                        components="[/libs/wcm/foundation/components/responsivegrid,group:canvas,group:Canvas.Structure]"
                         policyResourceType="wcm/foundation/components/responsivegrid">
                         <cq:authoring jcr:primaryType="nt:unstructured">
                             <assetToComponentMapping jcr:primaryType="nt:unstructured">
@@ -119,12 +119,12 @@
                     </canvas-structure>
                     <policy_1484711607981
                         jcr:description="Policy of the default root parsys"
-                        jcr:lastModified="{Date}2017-01-18T10:56:51.227+07:00"
+                        jcr:lastModified="{Date}2017-01-18T22:55:39.199+07:00"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         jcr:title="Default Layout Container"
                         sling:resourceType="wcm/core/components/policy/policy"
-                        components="[group:canvas,group:Canvas.Structure]"/>
+                        components="group:Canvas.Structure"/>
                 </responsivegrid>
             </components>
         </foundation>

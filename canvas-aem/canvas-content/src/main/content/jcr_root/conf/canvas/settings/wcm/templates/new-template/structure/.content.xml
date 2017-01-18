@@ -27,7 +27,8 @@
                     logoUrl="/content/canvas/en/homepage"/>
                 <mainNav
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="canvas/components/structure/mainNavigation"/>
+                    sling:resourceType="canvas/components/structure/mainNavigation"
+                    configPage="/conf/canvas/settings/wcm/navigation"/>
             </header>
             <responsivegrid
                 jcr:created="{Date}2017-01-18T00:12:08.263+07:00"

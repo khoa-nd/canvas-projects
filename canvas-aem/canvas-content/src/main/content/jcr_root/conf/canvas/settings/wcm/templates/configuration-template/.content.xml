@@ -2,10 +2,10 @@
 <jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
     jcr:primaryType="cq:Template">
     <jcr:content
-        cq:lastModified="{Date}2017-01-17T23:27:57.379+07:00"
+        cq:lastModified="{Date}2017-01-18T23:11:06.214+07:00"
         cq:lastModifiedBy="admin"
-        cq:templateType="/conf/canvas/settings/wcm/template-types/empty-page"
+        cq:templateType="/conf/canvas/settings/wcm/template-types/conf-page"
         jcr:primaryType="cq:PageContent"
-        jcr:title="Master Page Template"
+        jcr:title="Configuration Template"
         status="enabled"/>
 </jcr:root>

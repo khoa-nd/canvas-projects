@@ -9,4 +9,5 @@
     <redirect-page/>
     <new-template/>
     <rep:policy/>
+    <configuration-template/>
 </jcr:root>

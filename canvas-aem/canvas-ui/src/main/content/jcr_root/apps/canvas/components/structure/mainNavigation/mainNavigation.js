@@ -3,7 +3,7 @@ use(function () {
 
     if (configPage != "") {
         var configPageResourcePath = pageManager.getPage(configPage).getContentResource().getPath();
-        var configPageResource = resolver.getResource(configPageResourcePath + "/root");
+        var configPageResource = resolver.getResource(configPageResourcePath + "/root/responsivegrid");
 
         return {
             configPageResource: configPageResource

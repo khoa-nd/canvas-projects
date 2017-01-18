@@ -18,26 +18,7 @@
                 jcr:lastModified="{Date}2017-01-18T23:28:32.000+07:00"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="wcm/foundation/components/responsivegrid">
-                <navigationitem
-                    jcr:created="{Date}2017-01-18T23:44:11.549+07:00"
-                    jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2017-01-18T23:50:07.193+07:00"
-                    jcr:lastModifiedBy="admin"
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="canvas/components/structure/navigationItem"
-                    label="Test Label 1A"
-                    link="#"/>
-                <navigationitem_copy
-                    jcr:created="{Date}2017-01-18T23:44:11.549+07:00"
-                    jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2017-01-18T23:45:49.654+07:00"
-                    jcr:lastModifiedBy="admin"
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="canvas/components/structure/navigationItem"
-                    label="Test Label 2"
-                    link="#"/>
-            </responsivegrid>
+                sling:resourceType="wcm/foundation/components/responsivegrid"/>
         </root>
     </jcr:content>
 </jcr:root>
