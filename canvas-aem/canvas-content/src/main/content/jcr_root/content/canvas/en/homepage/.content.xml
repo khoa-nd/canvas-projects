@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2017-01-18T10:49:39.907+07:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/canvas/settings/wcm/templates/new-template"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Homepage"
+        sling:resourceType="canvas/components/structure/page"/>
+</jcr:root>
