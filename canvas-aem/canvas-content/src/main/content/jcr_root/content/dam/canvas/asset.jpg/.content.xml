@@ -8,7 +8,7 @@
         cq:name="asset.jpg"
         cq:parentPath="/content/dam/canvas"
         dam:relativePath="canvas/asset.jpg"
-        jcr:lastModified="{Date}2017-01-18T13:50:14.546+07:00"
+        jcr:lastModified="{Date}2017-01-18T16:23:07.913+07:00"
         jcr:lastModifiedBy="admin"
         jcr:primaryType="dam:AssetContent">
         <metadata

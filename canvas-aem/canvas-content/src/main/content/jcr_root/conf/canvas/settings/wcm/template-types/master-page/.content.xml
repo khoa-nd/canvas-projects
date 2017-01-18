@@ -4,7 +4,7 @@
     jcr:primaryType="cq:Template"
     ranking="{Long}1">
     <jcr:content
-        jcr:description="Generic template for web pages"
+        jcr:description="Master template for web pages"
         jcr:primaryType="cq:PageContent"
-        jcr:title="Canvas Empty Page"/>
+        jcr:title="Canvas Master Page"/>
 </jcr:root>

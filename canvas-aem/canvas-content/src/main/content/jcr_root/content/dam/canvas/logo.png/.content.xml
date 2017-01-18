@@ -5,7 +5,7 @@
     jcr:uuid="7a9ac06f-3fd3-40f4-9c14-c10f077d61d9">
     <jcr:content
         dam:relativePath="canvas/logo.png"
-        jcr:lastModified="{Date}2017-01-18T16:14:59.815+07:00"
+        jcr:lastModified="{Date}2017-01-18T16:23:07.793+07:00"
         jcr:lastModifiedBy="admin"
         jcr:primaryType="dam:AssetContent">
         <metadata

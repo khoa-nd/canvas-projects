@@ -4,7 +4,7 @@
     <jcr:content
         cq:lastModified="{Date}2017-01-17T23:27:57.379+07:00"
         cq:lastModifiedBy="admin"
-        cq:templateType="/conf/canvas/settings/wcm/template-types/empty-page"
+        cq:templateType="/conf/canvas/settings/wcm/template-types/master-page"
         jcr:primaryType="cq:PageContent"
         jcr:title="Master Template"
         status="enabled"/>

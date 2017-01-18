@@ -1,0 +1,12 @@
+<nav id="primary-menu" data-sly-use.mainNav="mainNavigation.js">
+    <ul data-sly-repeat="${mainNav.configPageResource.listChildren}">
+        <sly data-sly-resource="${item.path @ resourceType=item.resourceType}"/>
+    </ul>
+
+    <!-- Top Search
+       ============================================= -->
+    <div id="top-search">
+        <a href="#" id="top-search-trigger"><i class="icon-search3"></i><i class="icon-line-cross"></i></a>
+    </div>
+    <!-- #top-search end -->
+</nav>
