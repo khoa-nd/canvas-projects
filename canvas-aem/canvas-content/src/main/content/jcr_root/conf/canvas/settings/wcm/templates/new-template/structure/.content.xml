@@ -17,7 +17,15 @@
                 jcr:lastModified="{Date}2017-01-18T00:04:42.268+07:00"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="canvas/components/structure/header"/>
+                sling:resourceType="canvas/components/structure/header">
+                <logo
+                    jcr:lastModified="{Date}2017-01-18T16:22:16.489+07:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="canvas/components/structure/logo"
+                    fileReference="/content/dam/canvas/logo.png"
+                    logoUrl="/content/canvas/en/homepage"/>
+            </header>
             <responsivegrid
                 jcr:created="{Date}2017-01-18T00:12:08.263+07:00"
                 jcr:createdBy="admin"
