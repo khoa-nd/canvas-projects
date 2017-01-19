@@ -37,6 +37,64 @@
                     sling:resourceType="canvas/components/structure/navigationItem"
                     label="Test Label 2"
                     link="#"/>
+                <Copy_x0020_of_x0020_navigationitem_copy
+                    jcr:created="{Date}2017-01-18T23:44:11.549+07:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2017-01-19T15:31:33.413+07:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="canvas/components/structure/megaNav"
+                    label="Test Label 3B"
+                    tabs="[{&quot;tabId&quot;:&quot;credit&quot;\,&quot;tabLabel&quot;:&quot;Credit&quot;},{&quot;tabId&quot;:&quot;loans&quot;\,&quot;tabLabel&quot;:&quot;Loans&quot;},{&quot;tabId&quot;:&quot;insurance&quot;\,&quot;tabLabel&quot;:&quot;Insurance&quot;}]">
+                    <tabcontent
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="wcm/foundation/components/parsys">
+                        <title
+                            jcr:created="{Date}2017-01-19T15:21:17.799+07:00"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2017-01-19T15:23:18.306+07:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Navigation Credit"
+                            sling:resourceType="canvas/components/content/title"/>
+                    </tabcontent>
+                    <credit
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="wcm/foundation/components/parsys">
+                        <title
+                            jcr:created="{Date}2017-01-19T15:28:25.431+07:00"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2017-01-19T15:28:47.108+07:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Navigation Credit Content"
+                            sling:resourceType="canvas/components/content/title"/>
+                    </credit>
+                    <loans
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="wcm/foundation/components/parsys">
+                        <title
+                            jcr:created="{Date}2017-01-19T15:29:21.194+07:00"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2017-01-19T15:29:38.936+07:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Navigation Loans Content"
+                            sling:resourceType="canvas/components/content/title"/>
+                    </loans>
+                    <insurance
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="wcm/foundation/components/parsys">
+                        <title
+                            jcr:created="{Date}2017-01-19T15:31:50.301+07:00"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2017-01-19T15:32:03.921+07:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Insurance"
+                            sling:resourceType="canvas/components/content/title"/>
+                    </insurance>
+                </Copy_x0020_of_x0020_navigationitem_copy>
             </responsivegrid>
         </root>
     </jcr:content>
