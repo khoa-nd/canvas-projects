@@ -1,12 +1,11 @@
-<li class="mega-menu">
+<li class="mega-menu" data-sly-use.megaNav="th.co.canvas.core.models.MegaNavigationModel">
     <a href="#">
-        <div>Blog</div>
+        <div>${megaNav.label}</div>
     </a>
     <div class="mega-menu-content style-2 clearfix">
-        <ul class="tab">
-            <li><a href="javascript:void(0)" class="tablinks" onmouseover="openCity(event, 'London')" id="defaultOpen">London</a></li>
-            <li><a href="javascript:void(0)" class="tablinks" onmouseover="openCity(event, 'Paris')">Paris</a></li>
-            <li><a href="javascript:void(0)" class="tablinks" onmouseover="openCity(event, 'Tokyo')">Tokyo</a></li>
+        ${megaNav.tabs}
+        <ul class="tab" data-sly-repeat="${megaNav.tabs}">
+            <li><a href="javascript:void(0)" class="tablinks" onmouseover="openCity(event, '${item.tabId}')" id="defaultOpen">${item.tabLabel}</a></li>
         </ul>
         <div id="London" class="tabcontent">
             <ul class="mega-menu-column col-md-4">

@@ -14,18 +14,61 @@
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="granite/ui/components/foundation/container">
                 <items jcr:primaryType="nt:unstructured">
-                    <label
+                    <fieldset
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="granite/ui/components/foundation/form/textfield"
-                        fieldLabel="Label"
-                        name="./label"/>
-                    <link
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
-                        fieldLabel="Link"
-                        name="./link"
-                        rootPath="/content"
-                        suffix=".html"/>
+                        sling:resourceType="granite/ui/components/foundation/form/fieldset">
+                        <layout
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <label
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                        fieldLabel="Label"
+                                        name="./label"/>
+                                    <tabs
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/multifield"
+                                        class="full-width"
+                                        fieldDescription="Click 'Add Field' to add a new page"
+                                        fieldLabel="Tabs">
+                                        <field
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                            eaem-nested=""
+                                            name="./tabs">
+                                            <layout
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                                                method="absolute"/>
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <column
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/container">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <tabId
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                            fieldLabel="Tab ID"
+                                                            name="./tabId"/>
+                                                        <tabLabel
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                            fieldLabel="Tab Label"
+                                                            name="./tabLabel"/>
+                                                    </items>
+                                                </column>
+                                            </items>
+                                        </field>
+                                    </tabs>
+                                </items>
+                            </column>
+                        </items>
+                    </fieldset>
                 </items>
             </column>
         </items>
