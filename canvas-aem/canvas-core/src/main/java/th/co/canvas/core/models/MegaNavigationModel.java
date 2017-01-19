@@ -1,11 +1,10 @@
 package th.co.canvas.core.models;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
+import com.google.gson.Gson;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.Model;
 
 import javax.inject.Inject;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,7 +14,7 @@ import java.util.List;
 @Model(adaptables = Resource.class)
 public class MegaNavigationModel {
 
-    private static ObjectMapper mapper = new ObjectMapper();
+    private static Gson Gson = new Gson();
 
     @Inject
     private String label;
@@ -30,17 +29,13 @@ public class MegaNavigationModel {
     public List<TabModel> getTabs() {
         List<TabModel> tabModels = new ArrayList<TabModel>();
         for (String tab : tabs) {
-            try {
-                TabModel tabModel = mapper.readValue(tab, TabModel.class);
-                tabModels.add(tabModel);
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+            TabModel tabModel = Gson.fromJson(tab, TabModel.class);
+            tabModels.add(tabModel);
         }
         return tabModels;
     }
 
-    private class TabModel {
+    public class TabModel {
 
         private String tabId;
 
