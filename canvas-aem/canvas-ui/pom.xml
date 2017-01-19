@@ -127,8 +127,8 @@
                             <target>/apps/canvas/install</target>
                         </embedded>
                         <embedded>
-                            <groupId>com.fasterxml.jackson.core</groupId>
-                            <artifactId>jackson-databind</artifactId>
+                            <groupId>com.google.code.gson</groupId>
+                            <artifactId>gson</artifactId>
                             <target>/apps/canvas/install</target>
                         </embedded>
                     </embeddeds>
