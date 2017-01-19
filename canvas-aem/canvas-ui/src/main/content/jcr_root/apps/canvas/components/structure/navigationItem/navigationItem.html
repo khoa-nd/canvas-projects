@@ -1,5 +1,12 @@
-<li data-sly-use.navigationItem="navigationItem.js">
+<sly data-sly-use.configMode="th.co.canvas.core.utils.ConfigurationModeUtil"></sly>
+<li data-sly-test="${!configMode.enabled}" data-sly-use.navigationItem="navigationItem.js">
     <a href="${properties.link}">
         <div>${properties.label}</div>
     </a>
 </li>
+<div data-sly-test="${configMode.enabled}" data-sly-use.navigationItem="navigationItem.js"
+        style="height: 100px;background-color: #4F2A81;border-style:groove;margin-bottom: 10px;">
+    <strong>${component.title}</strong>
+    <p>Label : ${properties.label}</p>
+    <p>Link : ${properties.link}</p>
+</div>

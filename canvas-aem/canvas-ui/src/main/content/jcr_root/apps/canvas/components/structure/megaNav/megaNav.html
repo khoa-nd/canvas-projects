@@ -1,4 +1,6 @@
-<li class="mega-menu" data-sly-use.megaNav="th.co.canvas.core.models.MegaNavigationModel">
+<sly data-sly-use.configMode="th.co.canvas.core.utils.ConfigurationModeUtil"></sly>
+<li data-sly-test="${!configMode.enabled}" class="mega-menu"
+    data-sly-use.megaNav="th.co.canvas.core.models.MegaNavigationModel">
     <a href="#">
         <div>${megaNav.label}</div>
     </a>
@@ -14,3 +16,23 @@
         </sly>
     </div>
 </li>
+
+<div data-sly-test="${configMode.enabled}" data-sly-use.megaNav="th.co.canvas.core.models.MegaNavigationModel"
+     style="height: auto;background-color:#FEAC00;border-style:groove;margin-bottom: 10px;">
+    <strong>${component.title}</strong>
+
+    <p>Label : ${megaNav.label}</p>
+
+    <div class="mega-menu-content style-2 clearfix">
+        <ul class="tab" data-sly-repeat="${megaNav.tabs}">
+            <li>
+                <div>
+                    <p>Tab ID : ${item.tabId}</p>
+                    <p>Tab Label : ${item.tabLabel}</p>
+                    <p>Add nested component for this tab right low</p>
+                    <div data-sly-resource="${@path=item.tabId,resourceType='wcm/foundation/components/parsys'}"></div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
